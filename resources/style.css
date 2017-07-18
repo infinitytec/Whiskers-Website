@@ -100,7 +100,7 @@
     font-weight: normal;
     padding: 10px;
   }
-  #main.img {
+  #content img {
     display: inline-block;
     text-align: center;
     margin: auto;
@@ -241,7 +241,7 @@
     clear: left;
   }
   #main {
-    margin-top: 35%;
+    margin-top: 38%;
     margin-bottom: 5%;
   }
 }
