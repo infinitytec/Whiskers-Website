@@ -2,10 +2,10 @@
 <html lang="en">
 
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" />
     <link rel="stylesheet" type="text/css" href="../resources/style.css" />
-    <link rel="icon" href="../resources/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="../resources/favicon.ico" type="image/x-icon" />
     <title>Download Whiskers</title>
   </head>
 
@@ -14,7 +14,7 @@
       <img src="../resources/logo.png" class="logo" alt="logo">
       <nav class="fullnav">
         <a href="../index.html">Home</a>
-        <a href="#"  class="current">Download and Install</a>
+        <a href="#" class="current">Download and Install</a>
         <a href="https://scratch.mit.edu/discuss/topic/157672/">Scratch Discussion</a>
         <a href="https://github.com/NoMod-Programming/Whiskers">GitHub Source</a>
       </nav>
@@ -22,7 +22,7 @@
         <a class="dropdown">&#x2630; Menu</a>
         <div id="dropdown-content">
           <a href="../index.html">Home</a>
-          <a href="#"  class="current">Download and Install</a>
+          <a href="#" class="current">Download and Install</a>
           <a href="https://scratch.mit.edu/discuss/topic/157672/">Scratch Discussion</a>
           <a href="https://github.com/NoMod-Programming/Whiskers">GitHub Source</a>
         </div>
@@ -31,86 +31,83 @@
     <div id="main">
       <div id="content">
         <h1>Download Whiskers</h1>
-        <a href="https://github.com/NoMod-Programming/Whiskers/raw/master/Build/Whiskers.image " class="big">Click here to download the latest image</a><br>
+        <a href="https://github.com/NoMod-Programming/Whiskers/raw/master/Build/Whiskers.image " class="big">Click here to download the latest image</a>
+        <br>
         <h1>Installation instructions</h1>
-        <a href="#windows" class="big">Windows</a><a href="#mac" class="big">macOS</a><a href="#rpi" class="big">Raspberry Pi</a><a href="#linux" class="big">Other Linux</a><br>
+        <a href="#windows" class="big">Windows</a><a href="#mac" class="big">macOS</a><a href="#rpi" class="big">Raspberry Pi</a><a href="#linux" class="big">Other Linux</a>
+        <br>
         <p>Currently under construction.</p>
         <h1 id="rpi">Instructions for installing on the Raspberry Pi</h1>
-        <p>To use on the Pi download the image file, unzip it  save it into /home/pi folder and make a copy of it<br><br>
+        <p>To use on the Pi download the image file, unzip it save it into /home/pi folder and make a copy of it</p>
 
-cp /home/pi/Whiskers.image /home/pi/NuWhiskers.image<br><br>
+        <p class="code">cp /home/pi/Whiskers.image /home/pi/NuWhiskers.image</p>
 
-(need to use sudo for these commands)<br><br>
+        <p>(need to use sudo for these commands)</p>
 
-sudo cp /home/pi/NuWhiskers.image /usr/share/scratch<br><br>
+        <p class="code">sudo cp /home/pi/NuWhiskers.image /usr/share/scratch
+          <br>sudo cp /usr/bin/scratch /usr/bin/nuwhiskers</p>
 
-sudo cp /usr/bin/scratch /usr/bin/nuwhiskers<br><br>
+        <p>Then</p>
+        <p class="code">sudo nano /usr/bin/nuwhiskers</p>
 
-Then<br><br>
+        <p>and change line 10 to be</p>
 
-sudo nano /usr/bin/nuwhiskers<br><br>
+        <p class="code">IMAGE="/usr/share/scratch/NuWhiskers.image"</p>
 
-and change line 10 to be<br><br>
+        <p>and save it (CTRL-X followed by Y then enter)</p>
 
-IMAGE="/usr/share/scratch/NuWhiskers.image"
+        <p>Then to run Whiskers type</p>
 
-and save it (CTRL-X followed by Y then enter)<br>
+        <p class="code">sudo bash /usr/bin/nuwhiskers</p>
 
-Then to run Whiskers type
+        <p>or create this file using the text editor in /home/pi/Desktop and call it whiskers.desktop</p>
 
-sudo bash /usr/bin/nuwhiskers<br><br>
+        <p class="code">nano /home/pi/Desktop/nuwhiskers.desktop
+          <br> [Desktop Entry]
+          <br> Encoding=UTF-8
+          <br> Version=1.0
+          <br> Type=Application
+          <br> Exec=nuwhiskers
+          <br> Icon=scratch
+          <br> Terminal=false
+          <br> Name=NuWhiskers
+          <br> Comment= Programming system and content development tool
+          <br> Categories=Application;Education;Development;
+          <br> MimeType=application/x-scratch-project
+        </p>
 
-or create this file using the text editor in /home/pi/Desktop and call it whiskers.desktop<br><br>
+        <p>If you want to run ScratchGPIO with NuWhiskers then follow these isntructions supplied by Steve aka “@NoSheds” on twitter. You must already have Scratch GPIO7 installed. If you haven’t, then follow these instructions:</p>
 
-nano /home/pi/Desktop/nuwhiskers.desktop<br><br>
+        <p>Create a NuWhiskers GPIO desktop icon:</p>
 
-[Desktop Entry]<br>
- Encoding=UTF-8<br>
- Version=1.0<br>
- Type=Application<br>
- Exec=nuwhiskers<br>
- Icon=scratch<br>
- Terminal=false<br>
- Name=NuWhiskers<br>
- Comment= Programming system and content development tool<br>
- Categories=Application;Education;Development;<br>
- MimeType=application/x-scratch-project<br>
+        <p class="code">nano /home/pi/Desktop/nuwhiskersgpio7.desktop</p>
 
- 
+        <p>paste in</p>
 
-If you want to run ScratchGPIO with NuWhiskers then follow these isntructions supplied by Steve aka “@NoSheds” on twitter
+        <p class="code">[Desktop Entry]
+          <br> Encoding=UTF-8
+          <br> Version=1.0
+          <br> Type=Application
+          <br> Exec=/opt/scratchgpio7/nuwhiskersgpio7.sh
+          <br> Icon=scratch
+          <br> Terminal=false
+          <br> Name=NuWhiskersGPIO 7
+          <br> Comment= Programming system and content development tool
+          <br> Categories=Application;Education;Development;
+          <br> MimeType=application/x-scratch-project
+        </p>
 
-You must already have Scratch GPIO7 installed.  If you haven’t, then follow these instructions:<br>
+        <p>Create a shell script to run ScratchGPIO with NuWhiskers. Simplest way to get the file permissions etc is just to copy the existing scratchgpio7.sh file:</p>
 
-Create a NuWhiskers GPIO desktop icon:<br><br>
+        <p class="code">sudo cp /opt/scratchgpio7/scratchgpio7.sh /opt/scratchgpio7/nuwhiskersgpio7.sh</p>
 
- nano /home/pi/Desktop/nuwhiskersgpio7.desktop<br><br>
+        <p>then edit it with</p>
 
-paste in<br><br>
+        <p class="code">sudo nano /opt/scratchgpio7/nuwhiskersgpio7.sh</p>
 
-[Desktop Entry]<br>
- Encoding=UTF-8<br>
- Version=1.0<br>
- Type=Application<br>
- Exec=/opt/scratchgpio7/nuwhiskersgpio7.sh<br>
- Icon=scratch<br>
- Terminal=false<br>
- Name=NuWhiskersGPIO 7<br>
- Comment= Programming system and content development tool<br>
- Categories=Application;Education;Development;<br>
- MimeType=application/x-scratch-project<br>
+        <p>and change the last line from scratch to muwhiskers:</p>
 
-Create a shell script to run ScratchGPIO with NuWhiskers.  Simplest way to get the file permissions etc is just to copy the existing scratchgpio7.sh file:<br><br>
-
-sudo cp /opt/scratchgpio7/scratchgpio7.sh /opt/scratchgpio7/nuwhiskersgpio7.sh<br><br>
-
-then edit it with<br><br>
-
-sudo nano /opt/scratchgpio7/nuwhiskersgpio7.sh<br><br>
-
-and change the last line from scratch to muwhiskers:<br><br>
-
-nuwhiskers --document "/home/pi/Documents/Scratch Projects/rsc.sb" & </p>
+        <p class="code">nuwhiskers --document "/home/pi/Documents/Scratch Projects/rsc.sb" & </p>
       </div>
     </div>
     <footer>
