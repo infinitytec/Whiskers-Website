@@ -190,6 +190,10 @@
   html {
     overflow-x: hidden;
   }
+  header img.logo {
+    width: 45%;
+    height: 45%;
+  }
   .fullnav a {
     display: none;
   }
