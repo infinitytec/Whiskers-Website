@@ -75,8 +75,8 @@
     color: #faa51d;
   }
   nav a.current {
-    background-color: #faa51d;
-    color: white;
+    background-color: white;
+    color: #faa51d;
   }
   #main {
     margin-top: 10%;
@@ -192,8 +192,8 @@
   }
   .smallnav .dropdown:hover {
     transition: background-color 0.25s ease-out;
-    background-color: #4ab1dc;
-    color: #161717;
+    background-color: #faa51d
+    color: white;
   }
   .smallnav a {
     float: left;
@@ -205,12 +205,12 @@
   }
   nav a:hover {
     transition: background-color 0.25s ease-out;
-    background-color: #4ab1dc;
-    color: #161717;
+    background-color: white;
+    color: #faa51d;
   }
   nav a.current {
-    background-color: #4ab1dc;
-    color: #161717;
+    background-color: #faa51d;
+    color: white;
   }
   nav.smallnav:hover #dropdown-content,
   #dropdown-content a {
