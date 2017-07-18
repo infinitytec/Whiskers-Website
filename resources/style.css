@@ -211,7 +211,7 @@
     display: block;
   }
   #main {
-    margin-top: 25%;
+    margin-top: 20%;
     margin-bottom: 5%;
   }
   footer {
@@ -221,7 +221,7 @@
 }
 @media screen and (max-width: 600px) {
   #main {
-    margin-top: 30%;
+    margin-top: 25%;
     margin-bottom: 10%;
   }
 }
