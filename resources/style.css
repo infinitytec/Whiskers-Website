@@ -31,7 +31,7 @@
     background-color: #FAA51D;
     color: white;
   }
-  a.big {
+  a.big:hover {
     transition: background-color 0.25s ease-out;
     background-color: white;
     color: #faa51d;
