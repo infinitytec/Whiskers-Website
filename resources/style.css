@@ -25,6 +25,17 @@
   a.link:hover {
     color: #FAA51D;
   }
+  a.big {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #FAA51D;
+    color: white;
+  }
+  a.big {
+    transition: background-color 0.25s ease-out;
+    background-color: white;
+    color: #faa51d;
+  }
   nav a {
     text-decoration: none;
     color: white;
