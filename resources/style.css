@@ -27,7 +27,7 @@
   }
   nav a {
     text-decoration: none;
-    color: #faa51d;
+    color: white;
   }
   body {
     background-color: grey;
@@ -126,8 +126,8 @@
   }
   footer {
     display: block;
-    background-color: #161717;
-    color: #4ab1dc;
+    background-color: #faa51d;
+    color: white;
     margin: auto;
     padding: 10px;
     position: fixed;
