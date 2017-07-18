@@ -113,6 +113,9 @@
     font-weight: normal;
     padding: 10px;
   }
+  #content p.code {
+    background-color: grey;
+  }
   #content img {
     display: inline-block;
     text-align: center;
