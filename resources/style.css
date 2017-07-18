@@ -27,17 +27,17 @@
   }
   nav a {
     text-decoration: none;
-    color: #4ab1dc;
+    color: #faa51d;
   }
   body {
-    background: url("background.jpg") top left no-repeat fixed;
+    background-color: grey;
     width: 100%;
     margin: 0px;
     display: block;
   }
   header {
-    background-color: #161717;
-    color: #4ab1dc;
+    background-color: #faa51d;
+    color: white;
     margin: 0px;
     padding: 10px;
     position: fixed;
@@ -71,12 +71,12 @@
   }
   nav a:hover {
     transition: background-color 0.25s ease-out;
-    background-color: #4ab1dc;
-    color: #161717;
+    background-color: white;
+    color: #faa51d;
   }
   nav a.current {
-    background-color: #4ab1dc;
-    color: #161717;
+    background-color: #faa51d;
+    color: white;
   }
   #main {
     margin-top: 10%;
