@@ -28,6 +28,7 @@
   a.big {
     text-decoration: none;
     padding: 10px;
+    margin: 5px;
     background-color: #FAA51D;
     color: white;
   }
