@@ -31,86 +31,47 @@
     <div id="main">
       <div id="content">
         <h1>Download Whiskers</h1>
-        <a href="#" class="big">Click here to download the latest image</a><br>
+        <a href="https://github.com/NoMod-Programming/Whiskers/raw/master/Build/Whiskers.image" class="big">Click here to download the latest image</a><br>
         <h1>Installation instructions</h1>
-        <a href="#" class="big">Windows</a><a href="#" class="big">MacOS</a><a href="#" class="big">Raspberry Pi</a><a href="#" class="big">Other Linux</a><br>
+        <a href="#windows" class="big">Windows</a><a href="#mac" class="big">MacOS</a><a href="#raspberrypi" class="big">Raspberry Pi</a><a href="#otherlinux" class="big">Other Linux</a><br>
         <p>Currently under construction.</p>
-        <h1>Instructions for installing on the Raspberry Pi</h1>
-        <p>To use on the Pi download the image file, unzip it  save it into /home/pi folder and make a copy of it<br><br>
+        <h1 name="raspberrypi">Instructions for installing on the Raspberry Pi</h1>
+        <p>To use Whiskers on the Pi download the image file to the /home/pi directory and run the following commands as root:<br><br>
 
-cp /home/pi/Whiskers.image /home/pi/NuWhiskers.image<br><br>
+        <pre>sudo cp /home/pi/Whiskers.image /usr/share/scratch</pre><br><br>
 
-(need to use sudo for these commands)<br><br>
-
-sudo cp /home/pi/NuWhiskers.image /usr/share/scratch<br><br>
-
-sudo cp /usr/bin/scratch /usr/bin/nuwhiskers<br><br>
+        <pre>sudo cp /usr/bin/scratch /usr/bin/whiskers</pre><br><br>
 
 Then<br><br>
 
-sudo nano /usr/bin/nuwhiskers<br><br>
+        <pre>sudo nano /usr/bin/whiskers</pre><br><br>
 
 and change line 10 to be<br><br>
 
-IMAGE="/usr/share/scratch/NuWhiskers.image"
+        <pre>IMAGE="/usr/share/scratch/Whiskers.image"</pre>
 
 and save it (CTRL-X followed by Y then enter)<br>
 
 Then to run Whiskers type
 
-sudo bash /usr/bin/nuwhiskers<br><br>
+        <pre>sudo bash /usr/bin/whiskers</pre><br><br>
 
 or create this file using the text editor in /home/pi/Desktop and call it whiskers.desktop<br><br>
 
-nano /home/pi/Desktop/nuwhiskers.desktop<br><br>
+        <pre>nano /home/pi/Desktop/whiskers.desktop</pre><br><br>
 
-[Desktop Entry]<br>
- Encoding=UTF-8<br>
- Version=1.0<br>
- Type=Application<br>
- Exec=nuwhiskers<br>
- Icon=scratch<br>
- Terminal=false<br>
- Name=NuWhiskers<br>
- Comment= Programming system and content development tool<br>
- Categories=Application;Education;Development;<br>
- MimeType=application/x-scratch-project<br>
-
- 
-
-If you want to run ScratchGPIO with NuWhiskers then follow these isntructions supplied by Steve aka “@NoSheds” on twitter
-
-You must already have Scratch GPIO7 installed.  If you haven’t, then follow these instructions:<br>
-
-Create a NuWhiskers GPIO desktop icon:<br><br>
-
- nano /home/pi/Desktop/nuwhiskersgpio7.desktop<br><br>
-
-paste in<br><br>
-
-[Desktop Entry]<br>
- Encoding=UTF-8<br>
- Version=1.0<br>
- Type=Application<br>
- Exec=/opt/scratchgpio7/nuwhiskersgpio7.sh<br>
- Icon=scratch<br>
- Terminal=false<br>
- Name=NuWhiskersGPIO 7<br>
- Comment= Programming system and content development tool<br>
- Categories=Application;Education;Development;<br>
- MimeType=application/x-scratch-project<br>
-
-Create a shell script to run ScratchGPIO with NuWhiskers.  Simplest way to get the file permissions etc is just to copy the existing scratchgpio7.sh file:<br><br>
-
-sudo cp /opt/scratchgpio7/scratchgpio7.sh /opt/scratchgpio7/nuwhiskersgpio7.sh<br><br>
-
-then edit it with<br><br>
-
-sudo nano /opt/scratchgpio7/nuwhiskersgpio7.sh<br><br>
-
-and change the last line from scratch to muwhiskers:<br><br>
-
-nuwhiskers --document "/home/pi/Documents/Scratch Projects/rsc.sb" & </p>
+<pre>[Desktop Entry]
+ Encoding=UTF-8
+ Version=1.0
+ Type=Application
+ Exec=whiskers
+ Icon=scratch
+ Terminal=false
+ Name=Whiskers
+ Comment= Programming system and content development tool
+ Categories=Application;Education;Development;
+ MimeType=application/x-scratch-project
+</pre>
       </div>
     </div>
     <footer>
