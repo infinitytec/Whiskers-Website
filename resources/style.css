@@ -27,6 +27,7 @@
   }
   a.big {
     text-decoration: none;
+    float: left;
     padding: 10px;
     margin: 5px;
     background-color: #FAA51D;
