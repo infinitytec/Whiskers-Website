@@ -4,7 +4,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway" />
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../resources/style.css" />
     <link rel="icon" href="../resources/favicon.ico" type="image/x-icon" />
     <title>Download Whiskers</title>
@@ -44,7 +44,6 @@
             <p>Unzip the Squeak download and Whiskers image.</p>
             <p>Drag the Whiskers.image file to the SqueakConsole.exe or Squeak.exe file or set the .image file to open in Squeak.</p>
             <p>Whiskers should run. If you have any questions, please ask at the <a href="https://scratch.mit.edu/discuss/topic/157672/" class="link">forum</a>.</p>
-
             <h1 id="mac">Instructions for installing on macOS</h1>
             <p>Download the Whiskers image file, and download the Squeak VM for macOS from squeak.org and unzip it. If you like you can rename the app to Whiskers and drag it into your Applications folder.</p>
             <p>Now right click on the app and select the option “Show Package Contents” and double click Contents and Resources. Look through the files and find the default image file. The name starts with “Squeak”, then the Squeak version number and “-32bit”.</p>
@@ -53,29 +52,18 @@
             <p>Whiskers should now be properly set up. You should be able to double-click on the app to open Whiskers. If you have any questions, please ask at the <a href="https://scratch.mit.edu/discuss/topic/157672/" class="link">forum</a>.</p>
             <h1 id="rpi">Instructions for installing on the Raspberry Pi</h1>
             <p>To use on the Pi <a href="https://github.com/NoMod-Programming/Whiskers/raw/master/Build/Whiskers.image" class="link">download the image file</a>, unzip it save it into /home/pi folder and make a copy of it.</p>
-
             <p class="code">cp /home/pi/Whiskers.image /home/pi/NuWhiskers.image</p>
-
             <p>(You need to use sudo for these commands)</p>
-
             <p class="code">sudo cp /home/pi/NuWhiskers.image /usr/share/scratch
                 <br>sudo cp /usr/bin/scratch /usr/bin/nuwhiskers</p>
-
             <p>Then</p>
             <p class="code">sudo nano /usr/bin/nuwhiskers</p>
-
             <p>and change line 10 to be</p>
-
             <p class="code">IMAGE="/usr/share/scratch/NuWhiskers.image"</p>
-
             <p>and save it (CTRL-X followed by Y then enter)</p>
-
             <p>Then to run Whiskers type</p>
-
             <p class="code">sudo bash /usr/bin/nuwhiskers</p>
-
             <p>or create this file using the text editor in /home/pi/Desktop and call it whiskers.desktop</p>
-
             <p class="code">nano /home/pi/Desktop/nuwhiskers.desktop
                 <br> [Desktop Entry]
                 <br> Encoding=UTF-8
@@ -89,15 +77,10 @@
                 <br> Categories=Application;Education;Development;
                 <br> MimeType=application/x-scratch-project
             </p>
-
             <p>If you want to run ScratchGPIO with NuWhiskers then follow these isntructions supplied by Steve aka “@NoSheds” on twitter. You must already have Scratch GPIO7 installed. If you haven’t, then follow these instructions:</p>
-
             <p>Create a NuWhiskers GPIO desktop icon:</p>
-
             <p class="code">nano /home/pi/Desktop/nuwhiskersgpio7.desktop</p>
-
             <p>paste in</p>
-
             <p class="code">[Desktop Entry]
                 <br> Encoding=UTF-8
                 <br> Version=1.0
@@ -110,26 +93,23 @@
                 <br> Categories=Application;Education;Development;
                 <br> MimeType=application/x-scratch-project
             </p>
-
             <p>Create a shell script to run ScratchGPIO with NuWhiskers. Simplest way to get the file permissions etc is just to copy the existing scratchgpio7.sh file:</p>
-
             <p class="code">sudo cp /opt/scratchgpio7/scratchgpio7.sh /opt/scratchgpio7/nuwhiskersgpio7.sh</p>
-
             <p>then edit it with</p>
-
             <p class="code">sudo nano /opt/scratchgpio7/nuwhiskersgpio7.sh</p>
-
             <p>and change the last line from scratch to nuwhiskers:</p>
-
             <p class="code">nuwhiskers --document "/home/pi/Documents/Scratch Projects/rsc.sb" & </p><br><br>
             <p>Whiskers should run. If you have any questions, please ask at the <a href="https://scratch.mit.edu/discuss/topic/157672/" class="link">forum</a>.</p>
-            <p>Thanks to SimpleSi for the <a href="http://simplesi.net/nuscratch-version-of-whiskers/" class="link">original inscructions</a></p>
             <h1 id="linux">Instructions for installing on other versions of Linux</h1>
+            <p>Thanks to <a href="http://simplesi.net/" class="link">SimpleSi</a>, <a href="https://scratch.mit.edu/users/Penguin5664/" class="link">Penguin5664</a>, and <a href="https://scratch.mit.edu/users/Jonathan50/" class="link">Jonathan50</a> for the inscturctions.</p>
         </div>
     </div>
     <footer>
         <div class="footer-content">
             <img src="../resources/cat.png" alt="cat">
+        </div>
+        <div class="footer-content">
+            <p>Whiskers is based on Scratch 1.4, &copy;2009 by the Massachusetts Institute of Tecknology and NuScratch, a project of Tim Rowledge.</p>
         </div>
         <div class="footer-content">
             <p>Whiskers is developded by <a href="https://scratch.mit.edu/users/NoMod-Programming/">NoMod-Programming</a>.</p>
