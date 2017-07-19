@@ -115,6 +115,7 @@
   }
   #content p.code {
     background-color: grey;
+    font-family: 'Inconsolata', monospace;
   }
   #content img {
     display: inline-block;
