@@ -107,9 +107,8 @@
     overflow-x: hidden;
   }
   #content p {
-    background-color: #dedbdd;
     color: black;
-    width: 100%;
+    width: 98%;
     display: inline-block;
     font-weight: normal;
     padding: 10px;
