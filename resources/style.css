@@ -238,8 +238,8 @@
     color: #faa51d;
   }
   nav a.current {
-    background-color: #faa51d;
-    color: white;
+    background-color: white;
+    color: #faa51d;
   }
   nav.smallnav:hover #dropdown-content,
   #dropdown-content a {
