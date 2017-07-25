@@ -291,6 +291,7 @@
   }
 }
 @media screen and (min-height: 1100px) {
+  p.spacer {
     top: -100px;
   }
 }
