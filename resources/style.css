@@ -119,6 +119,12 @@
     background-color: grey;
     font-family: 'Inconsolata', monospace;
   }
+  p.spacer {
+    position: relative;
+    top: -100px;
+    background-color: none;
+    padding: 0px;
+  }
   #content img {
     display: inline-block;
     text-align: center;
